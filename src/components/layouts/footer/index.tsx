@@ -25,9 +25,7 @@ import {
 import ImageCommon from '@/components/ui/image'
 import { Typography } from '@/components/ui/typography'
 
-import icClose from '../../../../public/icons/common/ic-close.svg'
 import imgJackpot from '@/public/images/common/img-jackpot.webp'
-import icBackToTop from '@/public/icons/common/ic-arrow-top.svg'
 import imgGiftCode from '@/public/images/common/img-gift-code.gif'
 import icDigitalLogo from '@/public/images/common/img-digital-logo.webp'
 
@@ -123,12 +121,7 @@ function Footer() {
 
           <div className="flex w-full py-12 gap-12 max-tablet:flex-col">
             <div className="basis-1/3 ">
-              <ImageCommon
-                src={icDigitalLogo}
-                height={40}
-                width={130}
-                className="text-button-text"
-              />
+              <ImageCommon src={icDigitalLogo} className="text-button-text" />
               <Typography className="!text-background mt-4" fontWeight="bold">
                 {t('footer.a-premier-and-trusted')}
               </Typography>
@@ -195,7 +188,10 @@ function Footer() {
                   <SelectGroup>
                     {multipleLanguages?.map((lang: MultipleLanguageInterface) => (
                       <SelectItem value={lang?.value} key={lang?.key}>
-                        <ImageCommon width={24} height={12} src={lang?.icon} />
+                        <div className="w-full h-full">
+                          <ImageCommon width={24} height={12} src={lang?.icon} />
+                        </div>
+
                         <Typography className="!text-text-select">
                           {t(`footer.${lang?.label}`)}
                         </Typography>
@@ -211,12 +207,9 @@ function Footer() {
 
       {isBackToTop && (
         <div className="fixed right-10 bottom-10 z-20 w-11 h-11" onClick={handleBackToTop}>
-          <ReactSVG
-            src={icBackToTop?.src}
-            height={40}
-            width={40}
-            className=" transition-opacity duration-300 cursor-pointer text-button-text bg-button-color rounded-full h-full flex items-center justify-center"
-          />
+          <div className="w-11 h-11 transition-opacity duration-300 cursor-pointer text-button-text bg-button-color rounded-full flex items-center justify-center">
+            TOP
+          </div>
         </div>
       )}
 
@@ -255,7 +248,7 @@ function Footer() {
               onClick={handleShowJackpot}
             >
               <ImageCommon
-                src={icClose}
+                src="/icons/common/ic-close.svg"
                 width={18}
                 height={18}
                 className="transition-transform duration-300 hover:rotate-120 cursor-pointer "

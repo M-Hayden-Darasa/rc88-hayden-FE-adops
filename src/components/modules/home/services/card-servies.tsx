@@ -18,8 +18,8 @@ function CardServies({ product }: { product: ReasonInterface }) {
       </div>
 
       <div className="flex items-center justify-center h-[6vw] min-h-20 w-[86%] rounded-small bg-background-btn-reason absolute bottom-0 max-extrasmall-mobile:w-full">
-        <div className="rounded-small">
-          <ImageCommon src={button} />
+        <div className="rounded-small w-50 h-10">
+          <ImageCommon src={button} width={200} height={46} />
         </div>
       </div>
     </section>

@@ -13,11 +13,11 @@ interface imageInterfaceProps {
   className?: string
 }
 
-function ImageCommon({ src, alt, width, height, className }: imageInterfaceProps) {
+function ImageCommon({ src, width, height, className }: imageInterfaceProps) {
   return (
     <Image
       src={src}
-      alt={alt ? alt : 'image'}
+      alt="image"
       width={width || 0}
       height={height || 0}
       className={cn('object-cover', className)}

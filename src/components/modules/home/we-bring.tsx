@@ -14,7 +14,6 @@ import {
 import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
-import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
 import { handleRedirectBackstagePolicy } from '@/helpers/logics/common'
 
 function Reason() {
@@ -60,7 +59,7 @@ function Reason() {
                       {t('our-services')}
                     </Typography>
                     <ReactSVG
-                      src={icArrowRight?.src}
+                      src="/icons/common/ic-arrow-right.svg"
                       width={14}
                       height={14}
                       className="text-button-icon transition-transform duration-300 group-hover:translate-x-[3px]"

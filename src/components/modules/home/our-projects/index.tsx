@@ -10,9 +10,6 @@ import ImageCommon from '@/components/ui/image'
 import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
-import icMosquitoDiagonalRight from '@/public/icons/common/ic-mosquito-diagonal-right.svg'
-import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
-
 function WhoWeAre() {
   const { t } = useTranslation('home')
 
@@ -51,7 +48,7 @@ function WhoWeAre() {
                     {t(`see-more-projects`)}
                   </Typography>
                   <ImageCommon
-                    src={icMosquitoDiagonalRight}
+                    src="/icons/common/ic-mosquito-diagonal-right.svg"
                     width={12}
                     height={12}
                     className="icon"
@@ -69,7 +66,7 @@ function WhoWeAre() {
                 {t('our-services')}
               </Typography>
               <ReactSVG
-                src={icArrowRight?.src}
+                src="/icons/common/ic-arrow-right.svg"
                 width={14}
                 height={14}
                 className="text-background transition-transform duration-300 group-hover:translate-x-[3px]"

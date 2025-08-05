@@ -10,10 +10,7 @@ import ImageCommon from '@/components/ui/image'
 import { Typography } from '@/components/ui/typography'
 import { handleRedirectBackstage } from '@/helpers/logics/common'
 
-import icPlus from '@/public/icons/home/ic-plus.svg'
-import icStart from '@/public/icons/home/ic-start.svg'
 import icHero from '@/public/images/common/img-hero.png'
-import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
 
 function TheDigitalMarketing() {
   const { t } = useTranslation('home')
@@ -42,7 +39,7 @@ function TheDigitalMarketing() {
                     ?.map((_, index: number) => (
                       <ReactSVG
                         key={index}
-                        src={icStart?.src}
+                        src="/icons/home/ic-start.svg"
                         width={14}
                         height={14}
                         className="text-text-banner"
@@ -73,7 +70,7 @@ function TheDigitalMarketing() {
 
                   <div className="bg-button-color rounded-full w-[42px] h-[42px] flex items-center justify-center -ml-2">
                     <ReactSVG
-                      src={icPlus?.src}
+                      src="/icons/home/ic-plus.svg"
                       width={24}
                       height={24}
                       className="text-text-banner"
@@ -105,7 +102,7 @@ function TheDigitalMarketing() {
                   {t('book-a-call')}
                 </Typography>
                 <ReactSVG
-                  src={icArrowRight?.src}
+                  src="/icons/common/ic-arrow-right.svg"
                   width={14}
                   height={14}
                   className="text-text-banner transition-transform duration-300 group-hover:translate-x-[3px]"
@@ -121,12 +118,14 @@ function TheDigitalMarketing() {
                 >
                   {t('our-services')}
                 </Typography>
-                <ReactSVG
-                  src={icArrowRight?.src}
-                  width={14}
-                  height={14}
-                  className="text-text-banner transition-transform duration-300 group-hover:translate-x-[3px]"
-                />
+                <div className="w-4 h-4">
+                  <ReactSVG
+                    src="/icons/common/ic-arrow-right.svg"
+                    width={14}
+                    height={14}
+                    className="text-text-banner transition-transform duration-300 group-hover:translate-x-[3px]"
+                  />
+                </div>
               </div>
             </div>
           </div>

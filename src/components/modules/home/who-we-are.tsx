@@ -9,7 +9,6 @@ import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
 import imgWhoWeAre from '@/public/images/common/img-who-we-are.webp'
-import icMosquitoDiagonalRight from '@/public/icons/common/ic-mosquito-diagonal-right.svg'
 
 function WhoWeAre() {
   const { t } = useTranslation('home')
@@ -55,7 +54,7 @@ function WhoWeAre() {
                       {t(`more-about-us`)}
                     </Typography>
                     <ReactSVG
-                      src={icMosquitoDiagonalRight?.src}
+                      src="/icons/common/ic-mosquito-diagonal-right.svg"
                       className="icon text-button-text w-6 h-6 [&>div]:w-6 [&>div]:h-6 [&>div>svg]:w-6 [&>div>svg]:h-6 ic-mosquito"
                     />
                   </div>

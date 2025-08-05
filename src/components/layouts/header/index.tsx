@@ -16,7 +16,6 @@ import ImageCommon from '@/components/ui/image'
 import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
-import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
 import icDigitalLogo from '@/public/images/common/img-digital-logo.webp'
 
 function Header() {
@@ -208,7 +207,7 @@ function Header() {
                       >
                         {t('header.book-a-call')}
                         <ImageCommon
-                          src={icArrowRight}
+                          src="/icons/common/ic-arrow-right.svg"
                           width={16}
                           height={16}
                           className="transition-transform duration-300 group-hover:translate-x-[3px]"
@@ -222,7 +221,7 @@ function Header() {
                       >
                         {t('header.our-services')}
                         <ImageCommon
-                          src={icArrowRight}
+                          src="/icons/common/ic-arrow-right.svg"
                           width={16}
                           height={16}
                           className="transition-transform duration-300 group-hover:translate-x-[3px]"

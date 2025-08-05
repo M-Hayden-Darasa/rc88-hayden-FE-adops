@@ -1,12 +1,5 @@
 import { MenuFootersInterface, MultipleLanguageInterface, SocicalsInterface } from '@/models/footer'
 
-import icRc from '@/public/icons/common/ic-rc.svg'
-import icInstagram from '@/public/icons/common/ic-insta.svg'
-import icYoutube from '@/public/icons/common/ic-youtube.svg'
-import icEngFlag from '@/public/icons/common/ic-eng-flag.svg'
-import icFacebook from '@/public/icons/common/ic-facebook.svg'
-import icVietnamFlag from '@/public/icons/common/ic-vietnamese-flag.svg'
-
 const footerMenus: MenuFootersInterface[] = [
   {
     key: 'links',
@@ -64,32 +57,32 @@ const footerMenus: MenuFootersInterface[] = [
 const footerSocicals: SocicalsInterface[] = [
   {
     key: 'instal',
-    icon: icInstagram?.src,
+    icon: '/icons/common/ic-insta.svg',
   },
   {
     key: 'youtube',
-    icon: icYoutube?.src,
+    icon: '/icons/common/ic-youtube.svg',
   },
   {
     key: 'facebook',
-    icon: icFacebook?.src,
+    icon: '/icons/common/ic-facebook.svg',
   },
   {
-    icon: icRc?.src,
     key: 'rc',
+    icon: '/icons/common/ic-rc.svg',
   },
 ]
 
 const multipleLanguages: MultipleLanguageInterface[] = [
   {
     key: 'eng',
-    icon: icEngFlag,
+    icon: '/icons/common/ic-eng-flag.svg',
     value: 'en',
     label: 'english',
   },
   {
     key: 'vietnam',
-    icon: icVietnamFlag,
+    icon: '/icons/common/ic-vietnamese-flag.svg',
     value: 'vi',
     label: 'vietnamese',
   },

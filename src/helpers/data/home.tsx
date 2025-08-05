@@ -20,15 +20,10 @@ import imgBigWinSpeed from '@/public/images/common/img-bigwin-speed.webp'
 import imgBigWinLivestream from '@/public/images/common/img-bigwin-livestream.jpg'
 
 import imgBti from '@/public/images/common/img-bti-sport.webp'
-import icBti from '@/public/icons/home/ic-btn-btc.svg'
 import imgIbc from '@/public/images/common/img-ibc-sport.webp'
-import icIbc from '@/public/icons/home/ic-btn-ibc.svg'
 import imgK from '@/public/images/common/img-k-sport.webp'
-import icK from '@/public/icons/home/ic-k-sport.svg'
 import imgTechplay from '@/public/images/common/img-techplay.webp'
-import icTechPlay from '@/public/icons/home/ic-techplay.svg'
 import imgGsSport from '@/public/images/common/img-gs-sports.webp'
-import icGsSport from '@/public/icons/home/ic-gs-sport.svg'
 
 import imgBlog1 from '@/public/images/common/img-new1.webp'
 import imgBlog2 from '@/public/images/common/img-new2.webp'
@@ -264,23 +259,23 @@ const popularGenreProducts: PopularGenreProductsInterface[] = [
 const reasons: ReasonInterface[] = [
   {
     thumbnail: imgBti,
-    button: icBti,
+    button: '/icons/home/ic-btn-btc.svg',
   },
   {
     thumbnail: imgIbc,
-    button: icIbc,
+    button: '/icons/home/ic-btn-ibc.svg',
   },
   {
     thumbnail: imgK,
-    button: icK,
+    button: '/icons/home/ic-k-sport.svg',
   },
   {
     thumbnail: imgTechplay,
-    button: icTechPlay,
+    button: '/icons/home/ic-techplay.svg',
   },
   {
     thumbnail: imgGsSport,
-    button: icGsSport,
+    button: '/icons/home/ic-gs-sport.svg',
   },
 ]
 

@@ -6,8 +6,6 @@ import { OurProjectsInterface } from '@/models/home'
 import ImageCommon from '@/components/ui/image'
 import { Typography } from '@/components/ui/typography'
 
-import icNote from '@/public/icons/home/ic-note.svg'
-
 function CardProject({ project }: { project: OurProjectsInterface }) {
   const { t } = useTranslation('home')
 
@@ -40,7 +38,7 @@ function CardProject({ project }: { project: OurProjectsInterface }) {
       <div className="flex mt-5 overflow-hidden gap-1">
         <div className="flex flex-col items-center">
           <div className="w-6 h-6">
-            <ImageCommon src={icNote} />
+            <ImageCommon src="/icons/home/ic-note.svg" />
           </div>
           <div className="h-full w-[1px] bg-text-light" />
         </div>
