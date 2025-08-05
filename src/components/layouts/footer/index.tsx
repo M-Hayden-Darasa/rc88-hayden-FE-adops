@@ -25,7 +25,7 @@ import {
 import ImageCommon from '@/components/ui/image'
 import { Typography } from '@/components/ui/typography'
 
-import icClose from '@/public/icons/common/ic-close.svg'
+import icClose from '../../../../public/icons/common/ic-close.svg'
 import imgJackpot from '@/public/images/common/img-jackpot.webp'
 import icBackToTop from '@/public/icons/common/ic-arrow-top.svg'
 import imgGiftCode from '@/public/images/common/img-gift-code.gif'

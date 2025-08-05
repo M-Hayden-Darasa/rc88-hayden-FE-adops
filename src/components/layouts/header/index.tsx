@@ -16,7 +16,7 @@ import ImageCommon from '@/components/ui/image'
 import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
-import icClose from '@/public/icons/common/ic-close.svg'
+import icClose from '../../../../public/icons/common/ic-close.svg'
 import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
 import icDigitalLogo from '@/public/images/common/img-digital-logo.webp'
 
