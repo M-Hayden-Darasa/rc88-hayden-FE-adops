@@ -228,7 +228,7 @@ function Footer() {
               onClick={handleShowJackpot}
             >
               <ImageCommon
-                src={icClose}
+                src="/icons/common/ic-close.svg"
                 width={18}
                 height={18}
                 className="transition-transform duration-300 hover:rotate-120 cursor-pointer "

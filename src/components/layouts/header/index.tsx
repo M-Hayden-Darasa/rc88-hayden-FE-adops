@@ -16,7 +16,6 @@ import ImageCommon from '@/components/ui/image'
 import { Button } from '@/components/ui/button'
 import { Typography } from '@/components/ui/typography'
 
-import icClose from '../../../../public/icons/common/ic-close.svg'
 import icArrowRight from '@/public/icons/common/ic-arrow-right.svg'
 import icDigitalLogo from '@/public/images/common/img-digital-logo.webp'
 
@@ -162,7 +161,7 @@ function Header() {
                   <div className="max-tablet:bg-[#f5f5f5]/70 backdrop-blur-md h-fit w-full grow p-5 flex flex-col rounded-[16px] relative">
                     <div className="absolute top-3 right-3" onClick={handleTriggerCloseMobileMenu}>
                       <ImageCommon
-                        src={icClose}
+                        src="/icons/common/ic-close.svg"
                         width={22}
                         height={22}
                         className="transition-transform duration-300 hover:rotate-120 cursor-pointer "
